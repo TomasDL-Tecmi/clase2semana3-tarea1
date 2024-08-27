@@ -1,0 +1,68 @@
+# Primero
+palabras = ["Python", "Java", "C++", "Python", "JavaScript", "Python", "C#"]
+contador = 0
+
+for palabra in palabras:
+    if palabra == "Python":
+        contador += 1
+print(f"La palabra Python aparece {contador} veces")
+
+# Segundo
+
+frases = ["hola", "mundo", "python", "es", "genial"]
+
+for frase in frases:
+    frase = frase.swapcase()
+    print(frase)
+
+# Tercero
+
+palabrasa = ["sol", "luna", "cielo", "mar", "estrella", "pez"]
+
+for palabra2 in palabrasa:
+    print(f"La palabra {palabra2} tiene {len(palabra2)} letras")
+
+# cuarto
+
+numeros = [15, 22, 8, 34, 9, 6, 17]
+max = numeros[0]
+for numerog in numeros:
+    if numerog > max:
+        max = numerog
+print(f"El valor mas alto es {max}")
+
+
+#quinto
+
+numerosn = [-3, 5, -7, 2, -8, 10, -4, 6]
+numerosm = [""]
+contador2 = 0
+
+for numera in numerosn:
+    if numera >= 0:
+        numerosm.append(numera)
+for i in numerosm:
+    print(contador2)
+    contador2 += 1
+
+print(f"La cantidad de numeros mayores que 0 son {contador2-1}")
+
+# sexto
+
+numerosp = [1, 2, 3, 4, 5]
+
+print(numerosp[::-1])
+
+# septimo
+
+numeros = [4, 7, 2, 9, 3, 8, 5]
+suma2 = 0
+contador = 0
+suma = 0
+for suma2 in numeros:
+    suma = suma+suma2
+    contador += 1
+
+suma = int(suma/contador)
+
+print(f"El promedio de la lista anterior es de {suma}")
