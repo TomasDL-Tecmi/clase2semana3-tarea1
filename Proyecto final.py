@@ -236,10 +236,7 @@ while(True):
             precio_compra = supermercado.menu[item]['precio_compra']
             precio_venta = supermercado.menu[item]['precio_venta']
             ganancia = precio_venta - precio_compra
-            print(f"\nProducto: {item}")
-            print(f"Precio de compra por kg: ${precio_compra:.2f}")
-            print(f"Precio de venta por kg: ${precio_venta:.2f}")
-            print(f"Ganancia por kg: ${ganancia:.2f}")
+            print(f"\nProducto: {item}\nPrecio de compra por kg: ${precio_compra:.2f}\nPrecio de venta por kg: ${precio_venta:.2f}\nGanancia por kg: ${ganancia:.2f}")
 
         continuar = input("\n¿Desea hacer otro calculo? (si/no): ").lower()
         if continuar == "no":
