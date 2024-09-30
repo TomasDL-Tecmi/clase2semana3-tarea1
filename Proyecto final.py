@@ -86,6 +86,8 @@ while True:
 
             supermercado.show_menu()  # mostramos el menu actualizado
 
+            print("------------ Fin del apartado de agregar ------------\n")
+
         # Opcion 2: ----------------------------------- ELIMINAR PRODUCTOS -----------------------------------
 
         elif opcion in ["2", "eliminar", "eliminar productos"]:
@@ -156,25 +158,30 @@ while True:
 
             print("------------ Fin del apartado para modificar precios ------------\n")
         
-        # Opcion 5: Mostrar la lista actual de productos y sus precios
+        # ----------------------------------- MOSTRAR LISTA DE PRODUCTOS -----------------------------------
+
         elif opcion in ["5", "mostrar", "mostar lista", "mostrar lista actual"]:
             if supermercado.count_items() == 0:
                 print("\nNo hay productos en la lista.\n")
             else:
                 supermercado.show_menu()
         
-        # Opcion 6: Finalizar edicion y pasar a la calculadora
+        # ----------------------------------- PASAR A LA CALCULADORA -----------------------------------
         elif opcion in ["6", "finalizar"]:
             break
 
-        # Opcion 6: Salir del programa sin pasar por la calculadora
+        # ---------------------------------- SALIR DEL PROGRAMA -----------------------------------
+
         elif opcion in ["7", "salir"]:
             print("\n---------------------------- Fin del programa ----------------------------\n")
             exit()
 
-        # por si el usuario no sabe leer
+        # ----------------------------------- EN CASO DE USAR UNA OPCION NO VALIDA -----------------------------------
         else:
             print("\nOpcion no valida. Por favor, elija una opcion correcta.\n")
+    
+    # ------------ Excepciones ------------
+
     except KeyboardInterrupt:
         print("No uses Ctrl + C")
     except EOFError:
@@ -191,7 +198,7 @@ while(True):
         print("Calculadora de Costo-Beneficio")
         print("==============================")
 
-        # almacenamos los productos seleccionados
+        # definimos la lista de los productos seleccionados
         productos_seleccionados = []
 
         # mostramos el menu de opciones al usuario
@@ -238,6 +245,7 @@ while(True):
         if continuar == "no":
             print("---------------------------- Fin del programa ----------------------------")
             break
+
     # ----------- QUE HACER EN CASO DE QUE SALGA UN ERROR -----------
     except KeyboardInterrupt:
         print("No uses Ctrl + C")
